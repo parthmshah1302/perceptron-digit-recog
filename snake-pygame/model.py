@@ -62,6 +62,12 @@ class QTrainer:
 
         # zero_grad to empty the gradient (remember for PyTorch)
         self.optimizer.zero_grad()
+        loss=self.criterion(target, pred)
+        # Apply backpropagation
+        loss.backward()
+
+        self.optimizer.step()
+
 
         
 
