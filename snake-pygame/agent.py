@@ -6,13 +6,13 @@ from game import SnakeGameAI, Direction, Point
 from model import Linear_QNet, QTrainer
 import helper
 
-MAX_MEMORY=100_000
+MAX_MEMORY=100000
 BATCH_SIZE=1000
 LR=0.01
 
 class Agent: 
     
-    def __init__(self) -> None:
+    def __init__(self):
         self.n_games=0
         self.epsilon=0 # controls the randomness
         self.gamma=0.9 # controls the discount_rate
