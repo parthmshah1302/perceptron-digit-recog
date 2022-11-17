@@ -38,7 +38,7 @@ class QTrainer:
         next_state=torch.tensor(next_state, dtype=torch.float)
         # if we already have multiple values, this is in the form (n,x)
 
-        if len(state.shape==1):
+        if (len(state.shape)==1):
             # if len is 1, state is x but we want (1,x) -> we want to append 1 dimension
             state = torch.unsqueeze(state, 0)
             action = torch.unsqueeze(action, 0)
