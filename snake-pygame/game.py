@@ -60,7 +60,7 @@ class SnakeGameAI:
             self._place_food()
         
     def play_step(self,action):
-        self.play_step+=1
+        self.frame_iteration+=1
         # 1. collect user input
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -129,7 +129,7 @@ class SnakeGameAI:
             next_idx=(idx+1)%4 # right turn: r->d->l->u
             new_dir=clock_wise[next_idx]
         else: # [0,0,1]
-            new_idx=(idx-1)%4
+            next_idx=(idx-1)%4
             new_dir=clock_wise[next_idx]
         self.direction=new_dir
 
