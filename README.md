@@ -28,7 +28,9 @@ pip3 install torch torchvision --extra-index-url https://download.pytorch.org/wh
 python3 agent.py
 ```
 ## Results
-![Training animation]('media/training.gif')
+![Training animation](media/training.gif)
+
+![Plot](media/learning.png)
 
 ## Contributing
 
