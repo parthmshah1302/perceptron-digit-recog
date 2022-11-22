@@ -31,7 +31,7 @@ python3 agent.py
 ![Training animation](media/training.gif)
 
 ![Plot](media/learning.png)
-
+## [Report](media/report.pdf)
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
